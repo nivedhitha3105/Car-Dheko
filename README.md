@@ -4,19 +4,15 @@
 Car Dheko: Used Car Price Prediction
 
 Problem Statement:
+The aim of this project is to enhance customer experience and optimize the pricing process for used cars through machine learning. The goal is to develop a reliable, user-friendly tool using Streamlit to predict the prices of used cars based on a variety of features. This predictive tool should be designed as an interactive web application for seamless use by both customers and sales representatives.
+
 	
-	The aim of this project is to enhance customer experience and optimize the pricing process for used cars through machine learning. The goal is to develop a reliable, user-friendly tool using Streamlit to predict the prices of used cars based on a variety of features. This predictive tool should be designed as an interactive web application for seamless use by both customers and sales representatives.
-
+	
 Introduction:
-
-	The "Car Dheko - Used Car Price Prediction" project involves creating a machine learning model that accurately predicts the prices of used cars, based on historical data from Car Dheko. The dataset includes information about various car attributes, such as make, model, year, fuel type, and transmission type, gathered across different cities. The project’s objective is to process this data, develop and deploy a model capable of delivering instant price predictions for users. This involves data preprocessing, model development, evaluation, and integration of the model into a Streamlit application to ensure accessibility and practical utility for end-users. 
+The "Car Dheko - Used Car Price Prediction" project involves creating a machine learning model that accurately predicts the prices of used cars, based on historical data from Car Dheko. The dataset includes information about various car attributes, such as make, model, year, fuel type, and transmission type, gathered across different cities. The project’s objective is to process this data, develop and deploy a model capable of delivering instant price predictions for users. This involves data preprocessing, model development, evaluation, and integration of the model into a Streamlit application to ensure accessibility and practical utility for end-users.
 
 Data Collection: 
 The Dataset is contains the data of 6 different states in 6 different datasets in excel format.
-
-
- 
-
 The data has nested dictionaries and dictionaries in the columns. This is solved by generating a function. The `structure_data(df)` function restructures complex, nested data in a DataFrame by extracting details from specific JSON-like columns (`new_car_detail`, `new_car_overview`, `new_car_feature`, `new_car_specs`, and `car_links`). It iterates through each row, converts the nested JSON strings into dictionaries, and then organizes the data by extracting key-value pairs or lengths of nested lists where applicable. Each column's processed data is stored in separate DataFrames, which are appended to lists. After processing all rows, these lists are combined into separate DataFrames, which are then joined horizontally to create a single, consolidated DataFrame with renamed columns for clarity. The result is a well-structured DataFrame where all nested information is flattened and ready for analysis or modeling tasks.
 
 Data Pre – processing:
@@ -62,8 +58,6 @@ Model Evaluation:
 	
 	Mean Squared Error:
 		MSE measures the average of the squares of the errors, indicating how far the model’s predictions deviate from the actual values. Lower MSE values indicate better model performance.
-
-	
 	Mean Absolute Error:
 	MAE calculates the average of absolute differences between predicted and actual values, representing the average prediction error in the model. Like MSE, a lower MAE suggests a more accurate model.
 
