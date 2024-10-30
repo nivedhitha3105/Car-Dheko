@@ -72,7 +72,9 @@ The model’s performance is evaluated using three different measures. They are
 Observation:
 
 •	Gradient Boosting has the best performance overall, with the lowest MAE (0.73) and MSE (1.10), and the highest R²score (0.91). This indicates that Gradient Boosting is the most accurate model among the five, as it has the smallest error and explains the most variance in the target variable.
+
 •	Decision Tree also performs relatively well, with the second-lowest MAE (0.94) and MSE (1.89) values, and a high R²score (0.83). However, it's slightly less effective than Gradient Boosting in terms of predictive accuracy.
+
 •	Linear Regression, Lasso Regression, and Ridge Regression have identical performance metrics, with MAE (1.23), MSE (2.97), and R² (0.74). These models show higher error rates and explain less variance than Gradient Boosting and Decision Tree, suggesting they may be less suitable for this particular dataset or problem.
 
 In summary, Gradient Boosting is the best model. therefore, Gradient Boosting regressor can predict the car prices better.
