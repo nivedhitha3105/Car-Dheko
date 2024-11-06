@@ -13,7 +13,7 @@ The "Car Dheko - Used Car Price Prediction" project involves creating a machine 
 
 Data Collection: 
 
-The Dataset is contains the data of 6 different states in 6 different datasets in excel format.
+The Dataset is contains the data of 6 different cities in 6 different datasets in excel format.
 The data has nested dictionaries and dictionaries in the columns. This is solved by generating a function. The `structure_data(df)` function restructures complex, nested data in a DataFrame by extracting details from specific JSON-like columns (`new_car_detail`, `new_car_overview`, `new_car_feature`, `new_car_specs`, and `car_links`). It iterates through each row, converts the nested JSON strings into dictionaries, and then organizes the data by extracting key-value pairs or lengths of nested lists where applicable. Each column's processed data is stored in separate DataFrames, which are appended to lists. After processing all rows, these lists are combined into separate DataFrames, which are then joined horizontally to create a single, consolidated DataFrame with renamed columns for clarity. The result is a well-structured DataFrame where all nested information is flattened and ready for analysis or modeling tasks.
 
 Data Pre – processing:
